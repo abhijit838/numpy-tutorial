@@ -1,2 +1,2 @@
 # numpy-tutorial
-Basics of numpyl
+Basics of numpy
