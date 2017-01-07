@@ -48,7 +48,7 @@ array([3, 4, 6])
 <class 'numpy.ndarray'>
 ```
 
-#### $ Array creation :
+#### $ Array Creation :
 ```python
 import numpy as np
 
@@ -92,4 +92,38 @@ print('Creating array with unknown values in a range with linspace::: \n', np.li
 
 from numpy import pi
 print('Evaluating sin(x) with linspace::: \n', np.sin(np.linspace(0, 2*pi, 100)))
+```
+
+#### $ Array Printing : 
+
+Numpy displays array in a nested lists.
+
+* The last axis is printed from left to right,
+* The second-to-last is printed from top to bottom,
+* the rest are also printed from top to bottom, with each slice separated from the next by an empty line.
+
+One dimensional arrays are printed as row.
+
+```python
+import numpy as np
+
+print('------------array and reshape----------------------------')
+
+print('1d array::: \n', np.arange(6))
+
+print('2d array::: \n', np.arange(15).reshape(5, 3))
+
+print('3d array::: \n', np.arange(30).reshape(2, 3, 5))
+
+print('-------------------skips elements with ... if it is too long--------------------\n')
+
+print('A very long 1d array::: \n', np.arange(10000))
+
+print('A very long 2d array::: \n', np.arange(10000).reshape(100, 100))
+
+print('---------------do not skip elements with ... -----------------------')
+
+np.set_printoptions(threshold=10000)
+
+print('A very long 2d array::: \n', np.arange(10000).reshape(100, 100))
 ```
