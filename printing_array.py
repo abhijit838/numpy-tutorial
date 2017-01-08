@@ -1,5 +1,10 @@
 import numpy as np
 
+"""
+Created by Abhijit[abhijit.maity2010@gmail.com]
+Date: 07-01-17
+"""
+
 print('------------array and reshape----------------------------')
 
 print('1d array::: \n', np.arange(6))

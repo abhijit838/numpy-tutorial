@@ -1,5 +1,10 @@
 import numpy as np
 
+"""
+Created by Abhijit[abhijit.maity2010@gmail.com]
+Date: 06-01-17
+"""
+
 print('Creating an array of integers: np.array([1,2,3,4])')
 a = np.array([1,2,3,4])
 print(a)
