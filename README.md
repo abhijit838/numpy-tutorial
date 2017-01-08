@@ -223,3 +223,17 @@ print(a, '.sum(axis=0) = ', a.sum(axis=0))
 print(a, '.max(axis=0) = ', a.max(axis=1))
 print(a, '.cumsum(axis=0) = \n', a.cumsum(axis=0))
 ```
+
+#### $ Universal Functions :
+```python
+import numpy as np
+
+print('--------------- Few universal inbuilt methods----------------')
+b = np.arange(5)
+print('Create 1d array using arange::: np.arange(5) = ', b)
+print('Exponential of e::: np.exp(', b, ') = ', np.exp(b))
+print('Square root::: no.sqrt(', b, ') = ', np.sqrt(b))
+c = np.array([1, 3, -4, 5, -2])
+print('Add::: np.add(', b, ',', c, ') = ', np.add(b, c))
+
+```
