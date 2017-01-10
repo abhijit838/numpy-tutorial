@@ -433,4 +433,39 @@ Iteration using flat method on ::: [[ 0  1  2  3]
     :=> See also: Indexing, Indexing (reference), newaxis, ndenumerate, indices
 
 #### $ Shape Manipulation :
-...
+* Changing the shape of an array -
+* Stacking together different array -
+* Splitting one array to several small ones -
+ 
+#### $ Copies and Views : 
+* No Copy at All -
+* View or Shallow Copy -
+* Deep Copy -
+* Function and Method Overview -
+    * Array Creation
+    * Conversion
+    * Manipulations
+    * Questions
+    * Ordering
+    * Operations
+    * Basic Statistics
+    * Basic Linear Algebra
+    
+#### $ Less Basic :
+* Broadcasting rules -
+
+#### $ Fancy indexing and index tricks :
+* Indexing with Array of Indices -
+* Indexing with boolean array - 
+* The ix_() function - 
+* Indexing with string - 
+
+#### $ Linear Algebra :
+* Simple Array Operations - 
+* Tips and atricks -
+    * Auto Reshaping -
+    * Vector Stacking -
+    * Histogram -
+
+<a href='https://docs.scipy.org/doc/numpy-dev/reference/index.html#reference'>Numpy Reference link<a/>
+    
