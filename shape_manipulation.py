@@ -76,3 +76,27 @@ Create array using c_ and with : :::
  [2]
  [3]]
 """
+print('----------------- Splitting to several smaller array --------------')
+a = np.floor(10 * np.random.random((2, 12)))
+print('Splitting into 3 arrays using hsplit.')
+print('np.hsplit(', a, ',', 3, '= \n', np.hsplit(a, 3))
+"""
+Splitting into 3 arrays using hsplit.
+np.hsplit( [[ 6.  2.  8.  6.  9.  1.  1.  2.  0.  3.  1.  9.]
+ [ 1.  8.  4.  2.  7.  3.  3.  5.  1.  4.  5.  1.]] , 3 =
+ [array([[ 6.,  2.,  8.,  6.],
+       [ 1.,  8.,  4.,  2.]]), array([[ 9.,  1.,  1.,  2.],
+       [ 7.,  3.,  3.,  5.]]), array([[ 0.,  3.,  1.,  9.],
+       [ 1.,  4.,  5.,  1.]])]
+"""
+print('Split after the 3rd and the 4th column.')
+print('np.hsplit(', a, '(3, 4)) = \n', np.hsplit(a, (3, 4)))
+"""
+Split after the 3rd and the 4th column.
+np.hsplit( [[ 8.  4.  4.  3.  2.  0.  1.  9.  1.  8.  2.  3.]
+ [ 8.  9.  2.  9.  9.  6.  2.  2.  9.  7.  0.  9.]] (3, 4)) =
+ [array([[ 8.,  4.,  4.],
+       [ 8.,  9.,  2.]]), array([[ 3.],
+       [ 9.]]), array([[ 2.,  0.,  1.,  9.,  1.,  8.,  2.,  3.],
+       [ 9.,  6.,  2.,  2.,  9.,  7.,  0.,  9.]])]
+"""
