@@ -717,7 +717,16 @@ a =  [[ 0  2  2  3]
         16. numpy.zeros(shape, dtype=float, order='C')order : {‘C’, ‘F’}
         17. numpy.zeros_like(a, dtype=None, order='K', subok=True) : order : {‘C’, ‘F’, ‘A’, or ‘K’}
     * Conversion
+        1. ndarray.astype(dtype, order='K', casting='unsafe', subok=True, copy=True) - Copy of the array, cast to a specified type.
+        2. numpy.atleast_1d(*arys) - Convert inputs to arrays with at least one dimension. Scalar inputs are converted to 1-dimensional arrays, whilst higher-dimensional inputs are preserved.
+        3. numpy.atleast_2d(*arys) - View inputs as arrays with at least two dimensions.
+        4. numpy.atleast_3d(*arys) - View inputs as arrays with at least three dimensions.
+        5. numpy.mat(data, dtype=None) - Interpret the input as a matrix. Unlike matrix, asmatrix does not make a copy if the input is already a matrix or an ndarray. Equivalent to matrix(data, copy=False).
     * Manipulations
+        1. numpy.array_split(ary, indices_or_sections, axis=0) - Split an array into multiple sub-arrays.
+        2. numpy.column_stack(tup) - Stack 1-D arrays as columns into a 2-D array.
+        3. numpy.concatenate((a1, a2, ...), axis=0) - Join a sequence of arrays along an existing axis.
+        4. numpy.diagonal(a, offset=0, axis1=0, axis2=1) - Return specified diagonals.
     * Questions
     * Ordering
     * Operations
